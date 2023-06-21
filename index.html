@@ -33,7 +33,7 @@
                      latitude:house.location.lat,
                     longitude: house.location.lng
                 });
-                beds.setAttribute("value", `${house.bedrooms} beds ${house.totalBaths} baths`);
+                entity.setAttribute("value", `${house.bedrooms} beds ${house.totalBaths} baths`);
                 document.querySelector("a-scene").appendChild(entity);
            
             })
