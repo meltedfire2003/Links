@@ -1,25 +1,14 @@
 <html>
-  <head>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta property="og:title" content="ZnOSWWgSqmC - Dolphin Ventures">
-    <meta property="og:description" content="SMS Video Player">
-    <meta property="og:image" content="http://video.dolphinventures.dev/ZnOSWWgSqmC-thumbnail">
-    <meta property="og:image:secure_url" content="https://video.dolphinventures.dev/ZnOSWWgSqmC-thumbnail">
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:type" content="video.movie">
-    <meta property="og:url" content="https://player.dolphinventures.dev/ZnOSWWgSqmC">
-    <meta property="og:video" content="https://video.dolphinventures.dev/ZnOSWWgSqmC">
-  </head>
-  <body>
-   <div class="flex flex-col">
-    <div class="font-bold">C#</div>
-    <div><a href='www.google.com'>Google</a></div>
-    <div><a href='www.google.com'>Google</a></div>
-    <div><a href='www.google.com'>Google</a></div>
-    <div><a href='www.google.com'>Google</a></div>
-    <div><a href='www.google.com'>Google</a></div>
-   </div>
-  </body>
+<head>
+<title>AR.js A-Frame Location-based</title>
+<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+<script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar-threex-location-only.js'></script>
+<script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js'></script>
+</head>
+<body>
+<a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false' renderer='antialias: true; alpha: true'>
+    <a-camera gps-new-camera='gpsMinDistance: 5'></a-camera>
+    <a-entity material='color: red' geometry='primitive: box' gps-new-entity-place="latitude: <your-lat>; longitude: <your-loon>" scale="10 10 10"></a-entity>
+</a-scene>
+</body>
 </html>
