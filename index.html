@@ -38,18 +38,24 @@
                     latitude:house.location.lat,
                     longitude: house.location.lng
                 });
-                const box = document.createElement("a-box");
-                box.setAttribute("scale", {
-                    x: 20,
-                    y: 20,
-                    z: 20
-                });
-                box.setAttribute('material', { color: 'red' } );
-                box.setAttribute("position", {
-                    x : 0,
-                    y : 20,
-                    z: 0
-                } );
+                
+                //const box = document.createElement("a-box");
+                //box.setAttribute("scale", {
+                //    x: 20,
+                //    y: 20,
+                //    z: 20
+                //});
+                //box.setAttribute('material', { color: 'red' } );
+                //box.setAttribute("position", {
+                //    x : 0,
+                //    y : 20,
+                //    z: 0
+                //} );
+
+                const img = document.createElement("a-image")
+                img.setAttribute("width", 3)
+                img.setAttribute("height",1.5)
+                img.setAttribute("src", house.main_photo)
 
                  const textScale = 90;
                 
@@ -74,7 +80,8 @@
                 beds.setAttribute("align", "center");
 
                 
-                compoundEntity.appendChild(box);
+                //compoundEntity.appendChild(box);
+                compoundEntity.appendChild(img);
                 compoundEntity.appendChild(price);
                 compoundEntity.appendChild(beds);
                 document.querySelector("a-scene").appendChild(compoundEntity);
