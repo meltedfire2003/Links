@@ -21,7 +21,7 @@
           //  alert(`Got first GPS position: lon ${e.detail.position.longitude} lat ${e.detail.position.latitude}`);
            
             data.data.forEach( house => {
-                const entity = document.createElement("a-box");
+                const entity = document.createElement("a-entity");
                 entity.setAttribute("scale", {
                     x: 20, 
                     y: 20,
