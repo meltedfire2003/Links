@@ -22,12 +22,7 @@
            
             data.data.forEach( house => {
                 const entity = document.createElement("a-text");
-                   entity.setAttribute("look-at", "[gps-new-camera]");
-                entity.setAttribute("scale", {
-                    x: 120, 
-                    y: 120,
-                    z: 120
-                });
+                  
                 entity.setAttribute('material', { color: 'red' } );
                 entity.setAttribute('gps-new-entity-place', {
                      latitude:house.location.lat,
