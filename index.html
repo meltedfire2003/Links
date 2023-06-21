@@ -22,6 +22,7 @@
            
             data.data.forEach( house => {
                 const entity = document.createElement("a-entity");
+                entity.setAttribute('geometry', {primitive: 'plane', height:200, width:200 } )
                 entity.setAttribute("scale", {
                     x: 20, 
                     y: 20,
