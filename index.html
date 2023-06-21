@@ -22,7 +22,7 @@
            
             data.data.forEach( house => {
                 const entity = document.createElement("a-text");
-                 
+                   entity.setAttribute("look-at", "[gps-new-camera]");
                 entity.setAttribute("scale", {
                     x: 20, 
                     y: 20,
