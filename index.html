@@ -38,7 +38,7 @@
                     latitude:house.location.lat,
                     longitude: house.location.lng
                 });
-                compoundEntity.setAttribute('geometry', { primitive: 'box' } )
+                compoundEntity.setAttribute('geometry', { primitive: 'plane', height:1, width:1 } )
                compoundEntity.setAttribute('material', { color: 'red' } )
                 compoundEntity.setAttribute('light', { type:'point',intensity: 2.0 } )
                
