@@ -50,18 +50,33 @@
                     y : 20,
                     z: 0
                 } );
-                const text = document.createElement("a-text");
-                const textScale = 100;
-                text.setAttribute("look-at", "[gps-new-camera]");
-                text.setAttribute("scale", {
+
+                 const textScale = 90;
+                
+                const price = document.createElement("a-text");
+                price.setAttribute("look-at", "[gps-new-camera]");
+                price.setAttribute("scale", {
                     x: textScale,
                     y: textScale,
                     z: textScale
                 });
-                text.setAttribute("value", house.price);
-                text.setAttribute("align", "center");
+                price.setAttribute("value", house.price);
+                price.setAttribute("align", "center");
+
+                const bed = document.createElement("a-text");
+                bed.setAttribute("look-at", "[gps-new-camera]");
+                bed.setAttribute("scale", {
+                    x: textScale,
+                    y: textScale,
+                    z: textScale
+                });
+                bed.setAttribute("value", house.bedrooms);
+                bed.setAttribute("align", "center");
+
+                
                 compoundEntity.appendChild(box);
-                compoundEntity.appendChild(text);
+                compoundEntity.appendChild(price);
+                compoundEntity.appendChild(beds);
                 document.querySelector("a-scene").appendChild(compoundEntity);
             })
         }
