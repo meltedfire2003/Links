@@ -63,15 +63,15 @@
                 price.setAttribute("value", house.price);
                 price.setAttribute("align", "center");
 
-                const bed = document.createElement("a-text");
-                bed.setAttribute("look-at", "[gps-new-camera]");
-                bed.setAttribute("scale", {
+                const beds = document.createElement("a-text");
+                beds.setAttribute("look-at", "[gps-new-camera]");
+                beds.setAttribute("scale", {
                     x: textScale,
                     y: textScale,
                     z: textScale
                 });
-                bed.setAttribute("value", house.bedrooms);
-                bed.setAttribute("align", "center");
+                beds.setAttribute("value", house.bedrooms);
+                beds.setAttribute("align", "center");
 
                 
                 compoundEntity.appendChild(box);
