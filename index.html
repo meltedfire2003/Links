@@ -38,8 +38,10 @@
                     latitude:house.location.lat,
                     longitude: house.location.lng
                 });
-                compoundEntity.setAttribute("layout","type:box;margin:1.6")
+                compoundEntity.setAttribute('geometry', { primitive: 'box' } )
                compoundEntity.setAttribute('material', { color: 'red' } )
+                compoundEntity.setAttribute('light', { type:'point',intensity: 2.0 } )
+                
                 
                 
                 //const box = document.createElement("a-box");
