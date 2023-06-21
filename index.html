@@ -41,11 +41,7 @@
                 compoundEntity.setAttribute('geometry', { primitive: 'box' } )
                compoundEntity.setAttribute('material', { color: 'red' } )
                 compoundEntity.setAttribute('light', { type:'point',intensity: 2.0 } )
-                compoundEntity.setAttribute('scale', {
-                    x:20,
-                    y:20,
-                    z:20
-                })
+               
                 
                 
                 
@@ -93,10 +89,10 @@
                 });
                 beds.setAttribute("position", {
                     x:0,
-                    y:30,
+                    y:-30,
                     z:0
                 })
-                beds.setAttribute("value", `${house.bedrooms} beds`);
+                beds.setAttribute("value", `${house.bedrooms} beds ${house.totalBaths} baths`);
                 beds.setAttribute("align", "center");
 
                 
