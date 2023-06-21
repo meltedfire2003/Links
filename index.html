@@ -77,11 +77,11 @@
                 
                 const price = document.createElement("a-text");
                 price.setAttribute("look-at", "[gps-new-camera]");
-                //price.setAttribute("scale", {
-                //    x: textScale,
-                //    y: textScale,
-                //    z: textScale
-                //});
+                price.setAttribute("scale", {
+                    x: textScale,
+                    y: textScale,
+                    z: textScale
+                });
                 price.setAttribute("value", house.price);
                 price.setAttribute("align", "center");
 
@@ -89,9 +89,14 @@
                 beds.setAttribute("look-at", "[gps-new-camera]");
                 beds.setAttribute("scale", {
                     x: textScale,
-                    y: textScale + 10,
+                    y: textScale,
                     z: textScale
                 });
+                beds.setAttribute("position", {
+                    x:0,
+                    y:10,
+                    z:0
+                })
                 beds.setAttribute("value", `${house.bedrooms} beds`);
                 beds.setAttribute("align", "center");
 
