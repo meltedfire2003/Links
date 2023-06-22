@@ -24,7 +24,7 @@
                 const entity = document.createElement('a-entity');
                     entity.setAttribute('look-at', '[gps-new-camera]');
                     const text = document.createElement('a-text');
-                    text.setAttribute('value',  `${house.bedrooms} beds ${house.totalBaths} baths`);
+                    text.setAttribute('value',  `${house.price}`);
                     text.setAttribute('scale', {
                         x: textScale,
                         y: textScale, 
@@ -41,7 +41,7 @@
                         longitude: house.location.lng
                     });
                     entity.appendChild(text);
-                    const cone = document.createElement('a-cone');
+                    const cone = document.createElement('a-box');
                     cone.setAttribute('radiusTop', 0.1);
                     cone.setAttribute('scale', {
                         x: 30,
