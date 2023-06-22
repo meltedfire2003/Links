@@ -22,7 +22,7 @@
            
             data.data.forEach( house => {
                 const entity = document.createElement('a-entity');
-                    entity.setAttribute('look-at', '[gps-projected-camera]');
+                    entity.setAttribute('look-at', '[gps-new-camera]');
                     const text = document.createElement('a-text');
                     text.setAttribute('value',  `${house.bedrooms} beds ${house.totalBaths} baths`);
                     text.setAttribute('scale', {
