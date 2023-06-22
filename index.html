@@ -33,7 +33,7 @@
                     text.setAttribute('align', 'center');
                     text.setAttribute('position', {
                         x: 0,
-                        y: 0, 
+                        y: 200, 
                         z: 0
                     });
                     entity.setAttribute('gps-projected-entity-place', {
@@ -44,9 +44,9 @@
                     const cone = document.createElement('a-cone');
                     cone.setAttribute('radiusTop', 0.1);
                     cone.setAttribute('scale', {
-                        x: this.data.scale * 10,
-                        y: this.data.scale * 10,
-                        z: this.data.scale * 10
+                        x: 30,
+                        y: 30,
+                        z: 30
                     });
                     cone.setAttribute('height', 3);
                     cone.setAttribute('material', { color: 'magenta' } );
